@@ -1,7 +1,7 @@
 pipeline {
 
   environment {
-     registry = "atos06/ipiformation"
+     registry = "salle2devops/serveursalle2"
      registryCredential = 'docker-hub-credentials'
      dockerImage = ''
   }
@@ -18,7 +18,7 @@ pipeline {
       }
     }
 
-    stage('Delcenchement des tests') {
+    stage('Declenchement des tests') {
       parallel {
 
         stage('Test affichage de la page d accueil') {
